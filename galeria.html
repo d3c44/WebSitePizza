@@ -1,27 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://file.myfontastic.com/3j45yvRpaWhzeStdASehh9/icons.css" rel="stylesheet">
 </head>
 <body>
-    <style>
-        .seccion-con-imagen{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #fondo{
-            width: 100%;
-            height: 600px;
-            background-image: url(imagenes/4.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-    <div class="seccion-con-imagen">
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="logo-container column column--50">
+                <h1 class="logo">Bomberos</h1>
+            </div>
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <span class="icon-phone">132
+                    </span>
+                </p>
+                <p class="main-header__contactInfo__addres">
+                    <span class="icon-location">Orompello 136</span>
+                </p>
+                
+            </div>
+        </div>
+    </header>
+    <nav class="main_nav">
+        <div class="container container--flex">
+            <span class="icon-menu" id="btnmenu"></span>
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="/" class="menu__link menu__link--select">Inicio</a></li>
+                <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link">Galeria</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+            </ul>
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                <a href="" class="social-icon__link"><span class="icon-instagram"></span></a>
+            </div>
+        </div>
+    </nav>
+    <section class="banner">
+            <div class="seccion-con-imagen">
         <div id="fondo" class="seccion-con-imagen">
             <h1> Uso de clases con CSS</h1>
         </div>
@@ -49,7 +70,76 @@
             <div style="flex:1;text-align: center;width: 600px;height: 600px;padding-left: 30px;padding-right: 30px;">
                 <img style="max-width: 100%;"src="./imagenes/1.avif">
             </div>
-    </div>
-</div>
-</body>
-</html>
+        </section>
+        <section class="group today-special">
+            <h2 class="group__title">Epp Junta general</h2>
+            <div class="container container--flex">
+                <div class="column column--50--25">
+                    <img src="img/linterna bbb.jpg" alt="" class="today-special__img">
+                    <div class="today-special__tittle">Linterna streamlight</div>
+                    <div class="today-special__price">$80</div>
+                </div>
+                <div class="column column--50--25">
+                    <img src="img/guantesestruc.jpg" alt="" class="today-special__img">
+                    <div class="today-special__tittle">Guantes Protetch</div>
+                    <div class="today-special__price">$99</div>
+                </div>
+                <div class="column column--50--25">
+                    <img src="img/cascobomb.jpg" alt="" class="today-special__img">
+                    <div class="today-special__tittle">Casco de cuero</div>
+                    <div class="today-special__price">$800</div>
+                </div>
+                <div class="column column--50--25">
+                    <img src="img/uniforme.jpg" alt="" class="today-special__img">
+                    <div class="today-special__tittle">Uniforme Viking</div>
+                    <div class="today-special__price">$200</div>
+                </div>
+            </div>
+        </section>
+      
+    </main>
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">Visitanos</h2>
+                <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat illo atque impedit, repudiandae </p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contactenos</h2>
+                <p class="column__txt"> Orompello 136</p>
+                <p class="column__txt">Telefono: 132</p>
+               
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Siguenos</h2>
+                <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+                <p class="column__txt"><a href="" class="icon-twitter">Twitter</a></p>
+                <p class="column__txt"><a href="" class="icon-instagram">Instagram</a></p>
+            </div>
+            <p class="copy">WWW.bomberos.cl| Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+
+
+
+
+
+
+
+
+    <style>
+        .seccion-con-imagen{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #fondo{
+            width: 100%;
+            height: 600px;
+            background-image: url(imagenes/4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
