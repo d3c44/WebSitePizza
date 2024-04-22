@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Contacto</title>
+    <title>Home</title>
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://file.myfontastic.com/3j45yvRpaWhzeStdASehh9/icons.css" rel="stylesheet">
@@ -29,10 +29,10 @@
         <div class="container container--flex">
             <span class="icon-menu" id="btnmenu"></span>
             <ul class="menu" id="menu">
-                <li class="menu__item"><a href="/" class="menu__link menu__link--select">Inicio</a></li>
+                <li class="menu__item"><a href="index.html" class="menu__link menu__link">Inicio</a></li>
                 <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
-                <li class="menu__item"><a href="galeria.html" class="menu__link">Galeria</a></li>
-                <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link menu__link--select">Galeria</a></li>
+                <li claxss="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
             </ul>
             <div class="social-icon">
                 <a href="https://www.facebook.com/bomberosdeconcepcion/?locale=es_LA" class="social-icon__link"><span class="icon-facebook"></span></a>
@@ -42,12 +42,17 @@
         </div>
     </nav>
     <section class="banner">
-            <div class="seccion-con-imagen">
-        <div id="fondo" class="seccion-con-imagen">
-            <h1> GALERIA </h1>
-        </div>
-    </div>
-
+        <img src="img/bomberos1.jpg" alt="" class="banner__img">
+        <div class="banner__content">Contigo desde 1851</div>
+    </section>
+    <main class="main">
+        <section class="group--color">
+            <div class="container">
+                <h2 class="main__title">GALERÍA</h2>
+                <p class="main_txt">
+                </p>
+            </div>
+        </section>
         <div style="display: flex; justify-content: center; padding-top: 200px;">
             <div style="flex:1;text-align: center;width: 600px;height: 600px;padding-left: 30px;padding-right: 30px;">
                 <img style="max-width: 100%;" src="./img/FUEGO.jpg"/>
@@ -69,6 +74,8 @@
             </div>
             <div style="flex:1;text-align: center;width: 600px;height: 600px;padding-left: 30px;padding-right: 30px;">
                 <img style="max-width: 100%" src="./img/martires-bomberos.jpg   "/>
+            </div>
+
             </div>
         </section>
         <section class="group today-special">
@@ -120,26 +127,6 @@
         </div>
     </footer>
     <script src="js/menu.js"></script>
+</body>
+</html>
 
-
-
-
-
-
-
-
-    <style>
-        .seccion-con-imagen{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #fondo{
-            width: 100%;
-            height: 600px;
-            background-image: url(imagenes/4.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
